@@ -8,8 +8,23 @@
     <form method="POST" action="{% url 'register' %}">
         {% csrf_token %}
         {% if form.errors %}
-
+         <div class="alert alert-warning alert-dismissable fade show" role="alert">
+              <button type="button" class="btn-close ml-auto" data-bs-dismiss="alert" aria-label="Close">
+                    <!--small><sup>x</sup></small-->
+              </button>
+             
             <P> Your Form Has Errors.......</p>
+
+            {% for field in form %}
+            {% if field.errors %}
+
+                {{ field.errors }}
+            {% endif %}
+
+
+            {% endfor %}
+            </div>
+
         {% endif %}
 
         {{ form.as_p }}
