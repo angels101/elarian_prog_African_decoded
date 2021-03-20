@@ -1,0 +1,57 @@
+item:
+    -title
+
+    -images
+    -price
+    -condition
+    -item type -category
+    -description
+    -price
+    -brand
+
+ad:
+    - date &time
+    - ad id
+    - ad desscription
+
+owner: 
+    - city
+    - phone number
+
+
+feedback
+contact
+
+    functions :
+
+    - login -register -forget pass
+    - post add
+    - filter
+    - search
+
+
+
+
+
+
+
+
+
+
+
+
+
+-URL
+-views -----------Templates
+-Models
+
+
+
+
+#for a single product
+
+
+/products/iphone6
+
+
+/products

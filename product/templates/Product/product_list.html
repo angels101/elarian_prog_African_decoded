@@ -1,0 +1,9 @@
+<h1>OUR PRODUCTS</h1>
+
+{% for product in product_list%}
+
+
+
+<h2><a href="{% url 'products:product_detail' product.slug %}">{{ product }}</a></h2>
+
+{% endfor %} 
